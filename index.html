@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Guillermo Moñino</title>
+        <link rel="icon" type="image/png" sizes="16x16"  href="/assets/icon/favicon-16x16.png">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+    </head>
+
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Guillermo Moñino</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Guillermo Moñino</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About me</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#music" onclick="toggleMenu()">Music</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="assets/img/personal/rockin2.png" alt="rocking">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1"> Hello there! I'm</p>
+                <h1 class="title">Guillermo Moñino</h1>
+                <p class="section__text__p2">Telecom Engineer</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color2"
+                        onclick="window.open('assets/resume-gmonino.pdf')">
+                        Download CV
+                    </button>
+                    <button
+                        class="btn btn-color1"
+                        onclick="location.href('./#contact')">
+                        Contact
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="assets/icon/linkedin.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/guillermo-monino-canovas/', '_blank')">
+                    <img src="assets/icon/github.png" alt="GitHib" class="icon" onclick="window.open('https://github.com/gmoican', '_blank')">
+                    <img src="assets/icon/linktree.png" alt="Linktree" class="icon" onclick="window.open('https://linktr.ee/westy_music', '_blank')">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img
+                      src="assets/img/personal/profilePicture.jpg"
+                      alt="profilePicture"
+                      class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img
+                              src="assets/icon/exp.png"
+                              alt="Exp icon"
+                              class="icon"
+                              onclick="location.href='#experience'"
+                            />
+                            <h3>Experience</h3>
+                            <p>1+ year<br />Software developer</p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                              src="assets/icon/educ.png"
+                              alt="Education icon"
+                              class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>Telecommunications Engineering - M.Eng<br />Sound & Image Processing - B.Eng</p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                              src="assets/icon/guit.png"
+                              alt="Guitar icon"
+                              class="icon"
+                              onclick="location.href='#music'"
+                            />
+                            <h3>Musician</h3>
+                            <p>Playing since 2013<br />Involved in music projects since 2017</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Skilled telecommunications engineer with knowledge of Big Data and Digital Signal Processing and experience as Software developer. <br>
+                            Through my career and side projects, I’ve honed my coding proficiency as well as communication, organization and managment skills. <br>
+                            I am currently seeking to reorient my career path to match my interests and areas of expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <p class="section__text__p1">Explore my</p>
+            <h1 class="title">Experience</h1>            
+            <div class="section-container">
+                <div class="exp-upper-container">
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/stratesys.png"
+                                alt="Stratesys icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>SAP Consultant</h3>
+                            <p><a href="https://www.stratesys-ts.com/es/" target="_blank">Stratesys</a> | 2024 - Present</p>
+                        </div>
+                    </div>
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/indie.png"
+                                alt="Indie icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>Audio plugins developer</h3>
+                            <p><a href="https://github.com/gmoican/PunkXros" target="_blank">Indie</a> | 2024 - Present</p>
+                        </div>
+                    </div>
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/capgemini.png"
+                                alt="Capgemini icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>Backend developer</h3>
+                            <p><a href="https://www.stratesys-ts.com/es/" target="_blank">Capgemini</a> | 2023 - 2024</p>
+                        </div>
+                    </div>
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/upv.png"
+                                alt="UPV icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>Master's Thesis</h3>
+                            <p><a href="https://www.upv.es/index-es.html" target="_blank">UPV</a> | 2023</p>
+                        </div>
+                    </div>
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/bmat.jpeg"
+                                alt="BMAT icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>Software developer</h3>
+                            <p><a href="https://www.stratesys-ts.com/es/" target="_blank">Stratesys</a> | 2022 - 2023</p>
+                        </div>
+                    </div>
+                    <div class="exp-container">
+                        <div class="exp-work-pic">
+                            <img
+                                src="assets/img/work/ua.jpeg"
+                                alt="UA icon"
+                                class="icon"
+                            />
+                        </div>
+                        <div class="exp-summary">
+                            <h3>Bachelor's Thesis</h3>
+                            <p><a href="https://www.ua.es/" target="_blank">University of Alicante</a> | 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-detail-container">
+                    <p>This is a sample text, you should not be seeing this...<br>Click on any of the experiences on the left.</p>
+                    <div class="exp-detail-tech">
+                        <!-- Tech icons will be dynamically injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse my recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="section-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="assets/img/side_projects/punkFx.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Punk FX - Audio plugins</h2>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/gmoican/PunkXros')"
+                        >
+                            Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://youtu.be/U6L5iTt00C0?si=IaqexqsJqkZ6udIO')"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="assets/img/side_projects/schem.png"
+                            alt="Project 2"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Punk FX - Hardware design</h2>
+                    <p>Work in progress</p>
+                    <!--
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                    -->
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="assets/img/side_projects/music.png"
+                            alt="Project 3"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Generative music</h2>
+                    <p>Work in progress</p>
+                    <!--
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Github
+                        </button>
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/'"
+                        >
+                            Live Demo
+                        </button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <section id="music">
+            <p class="section__text__p1">Check out my</p>
+            <h1 class="title">Music Works</h1>
+            <div id="image-carousel">
+                <a href="https://open.spotify.com/intl-es/album/4jzi24VyRQJJ0OlpyIQ6ns?si=gY5HAb-_T8atl6bWfra6aQ" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover06_calima.png" />
+                    <div class="overlay">Westy | 2024<br>Everything</div>
+                </a>
+                <a href="https://open.spotify.com/intl-es/album/2QT2AYV5v3YbUvZS2MSvYL?si=Ku5GIt9fS5CBUCR6ch3Jjg" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover05_furrVisitor.png" />
+                    <div class="overlay">Westy | 2024<br>Everything</div>
+                </a>
+                <a href="https://open.spotify.com/intl-es/album/3b1RxplFmsVp71bSLdcgnu?si=U-ickBQXQKyyZ7qSev4LaA" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover04_bokeh.png" />
+                    <div class="overlay">Westy | 2021<br>Everything</div>
+                </a>
+                <a href="https://open.spotify.com/intl-es/album/4T4LLEQDzRIXed1PkxAwJr?si=avxOyH1qQ6mvBZisv_8E1g" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover03_usnp.jpeg" />
+                    <div class="overlay">Sharpend | 2020<br>Bassist</div>
+                </a>
+                <a href="https://open.spotify.com/intl-es/album/0xR7QPkgcqYkK3TyS8KUkc?si=kMihMawKSdqCAMCs68wnaA" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover02_nebula.jpg" />
+                    <div class="overlay">Nebula | 2020<br>Producer - Bassist</div>
+                </a>
+                <a href="https://open.spotify.com/intl-es/album/0NGIOTF54NwVexfLmuS7sM?si=IHJIpvdfR4CSEgYeIx_Apw" target="_blank" class="image-wrapper">
+                    <img class="image" src="assets/img/music/cover01_rcq.png" />
+                    <div class="overlay">Recuerdos con Q | 2019<br>Producer - Mixing and mastering</div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">For professional opportunities, side projects, small talks, etc.</p>
+            <h1 class="title">Contact me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="assets/icon/mail.png" alt="Mail" class="contact-icon">
+                    <p><a href="mailto:guillermomcanovas@gmail.com">guillermomcanovas@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container"></div>
+                    <img src="assets/icon/linkedin_round.png" alt="LinkedIn alt" class="contact-icon">
+                    <p><a href="https://www.linkedin.com/in/guillermo-monino-canovas/" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
+
+
