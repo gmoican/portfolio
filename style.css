@@ -149,6 +149,16 @@ section {
 }
 
 .section-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.section-container-flex {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
 }
 
@@ -292,13 +302,6 @@ section {
     text-align: center;
 }
 
-.section-container {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    display: flex;
-}
-
 .section__pic-container {
     height: 400px;
     width: 400px;
@@ -346,7 +349,7 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.exp-container:hover {
+.exp-container:hover, .exp-container.selected {
     background-color: #e0e0e0;
 }
 

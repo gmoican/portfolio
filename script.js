@@ -115,27 +115,42 @@ const expContainers = document.querySelectorAll('.exp-container');
 const detailDescription = document.querySelector('.exp-detail-container p');
 const techContainer = document.querySelector('.exp-detail-tech');
 
+// Change description and tech for each experience entry
 function updateExperienceDetails(experience) {
   
   // Update description
   detailDescription.innerHTML = experienceData[experience].description;
 
-  // Clear tech icons
+  // Update tech icons
   techContainer.innerHTML = "";
-
-  // Add tech icons related to the selected experience
   experienceData[experience].tech.forEach(tech => {
       const img = document.createElement('img');
       img.src = techIcons[tech];
       img.alt = `${tech} icon`;
-      img.classList.add('highlight'); // Initially highlight the relevant tech
       techContainer.appendChild(img);
   });
 }
 
+// Makes the HOVER effect last on selected item
+function selectExperience(expElement) {
+  expContainers.forEach(container => container.classList.remove('selected'));
+  expElement.classList.add('selected');
+}
+
 expContainers.forEach(container => {
   container.addEventListener('click', () => {
+      selectExperience(container);
       const experienceId = container.querySelector('img').alt.split(" ")[0].toLowerCase();
       updateExperienceDetails(experienceId);
   });
 });
+
+// Default entry
+// updateExperienceDetails('stratesys');
+
+window.onload = function() {
+  const firstExp = expContainers[0];
+  const expId = firstExp.querySelector('img').alt.split(" ")[0].toLowerCase();
+  selectExperience(firstExp);
+  updateExperienceDetails(expId);
+}
