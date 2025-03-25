@@ -45,7 +45,7 @@ setInterval(updateText, 3000);
 // Data structure for experience details and related technologies
 const experienceData = {
   stratesys: {
-      description: "As an <strong>SAP Consultant</strong>, I work on large-scale SAP implementations, focusing on cloud solutions, process optimization, and cross-functional team collaboration.<br><br>I am currently working in the international SAP implantation project for <a href='https://media.renaultgroup.com/horse-new-leading-powertrain-technology-company-is-now-fully-operational-and-ready-to-reinvent-combustion/' target='_blank'>HORSE (RENAULT’s automotive factory)</a>.",
+      description: "As an <strong>SAP Consultant</strong>, I work on large-scale SAP implementations, focusing on cloud solutions, process optimization, and cross-functional team collaboration.<br><br>I am currently working in the international SAP implantation project for <a href='https://media.renaultgroup.com/horse-new-leading-powertrain-technology-company-is-now-fully-operational-and-ready-to-reinvent-combustion/' target='_blank'>HORSE (RENAULT’s automotive factory)</a>. My main tasks are focused on custom parameterization of the Transport Management module and providing training to users in different Supply Chain scenarios.",
       tech: ["sap", "office", "java"]
   },
   indie: {
